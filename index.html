@@ -1,0 +1,2538 @@
+
+<!doctype html><html lang="en-US"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="preload" href="/fonts/Rubik-VariableFont_wght.ttf" crossorigin="anonymous" as="font" type="font/ttf"><link rel="canonical" href="https://siestly.com/pillow/"><title>Siestly Pillow</title><meta name="description" content="The Siestly Pillow is the perfect pillow for all sleepers. It is made with a 100% cotton cover and a 100% polyester filling. It is hypoallergenic and machine washable. It is the perfect pillow for all sleepers."><meta property="og:url" content="/pillow/"><meta property="og:type" content="website"><meta property="og:title" content="Siestly Pillow"><meta property="og:description" content="The Siestly Pillow is the perfect pillow for all sleepers. It is made with a 100% cotton cover and a 100% polyester filling. It is hypoallergenic and machine washable. It is the perfect pillow for all sleepers."><meta property="og:image" content="https://siestly.com/img/siestly-og-1200w.webp"><meta name="twitter:card" content="summary_large_image"><meta property="twitter:domain" content="siestly.com"><meta property="twitter:url" content="/pillow/"><meta name="twitter:title" content="Siestly Pillow"><meta name="twitter:description" content="The Siestly Pillow is the perfect pillow for all sleepers. It is made with a 100% cotton cover and a 100% polyester filling. It is hypoallergenic and machine washable. It is the perfect pillow for all sleepers."><meta name="twitter:image" content="https://siestly.com/img/siestly-og-1200w.webp"><link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Official Siestly: America&#39;s most comfortable sleep"><link rel="alternate" href="/feed/feed.json" type="application/json" title="Official Siestly: America&#39;s most comfortable sleep"><meta name="view-transition" content="same-origin"><meta name="generator" content="Eleventy v2.0.1"><link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png"><link rel="manifest" href="/site.webmanifest"><link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5"><meta name="msapplication-TileColor" content="#da532c"><meta name="theme-color" content="#ffffff"><style>.shipping-notice {
+    background-color: var(--background-color-milk);
+    padding: 1rem;
+    color: var(--text-color);
+    border-radius: 0.5rem;
+  }
+
+  .jsShippingDate:not(.is-loaded) {
+    filter: blur(5px);
+  }
+.product {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.product__content{
+	position: sticky;
+	top: 60px;
+	margin-bottom: auto;
+}
+
+.product__headline{
+	margin-bottom: 24px;
+}
+
+.product__description {
+  margin-bottom: 24px;
+}
+
+.product__meta{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+/* stack on 800 and below */
+
+@media (max-width: 800px) {
+  .product {
+	display: flex;
+	flex-direction: column;
+	gap: 0;
+  }
+
+  .product__content {
+  	display: contents;
+  }
+
+  .product__headline{
+  	order: -1;
+  }
+  .product__media{
+  	margin-bottom: 16px;
+  }
+}
+  .gallery img{
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  &:not(.gallery--popup) .gallery__item{
+    cursor: url('data:image/svg+xml,%3csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2232%22 height=%2232%22 viewBox=%220 0 512 512%22%3e%3cg transform=%22rotate(90 256 256)%22%3e%3crect id=%22r%22 x=%2216%22 y=%22236%22 width=%22480%22 height=%2240%22 rx=%2214%22 fill=%22%23ececec%22/%3e%3cuse href=%22%23r%22 transform=%22rotate(90 256 256)%22 fill=%22%23ececec%22/%3e%3c/g%3e%3c/svg%3e') 16 16, auto;
+
+    transition: filter 0.3s;
+    &:hover {
+      filter: brightness(0.9);
+    }
+  }
+}
+
+.gallery__item:first-child {
+  grid-column: span 2; 
+}
+
+.gallery__item:nth-child(2), .gallery__item:nth-child(3) {
+  grid-column: span 1; 
+}
+
+.gallery__item:nth-child(4), .gallery__item:nth-child(5), .gallery__item:nth-child(6) {
+  grid-column: span 1; 
+}
+
+.gallery__item:nth-child(n+4):nth-child(-n+6) {
+  grid-column: span 1; 
+}
+
+@media (max-width: 800px) {
+  .gallery {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    padding-bottom: calc(16px + 1em); 
+  }
+
+  .gallery__item {
+    flex: 0 0 auto; 
+    width: calc(100% - 32px); 
+    scroll-snap-align: start;
+  }
+
+  .gallery__item:first-child {
+    margin-left: 16px;
+  }
+
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+.gallery--popup {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  inset: 0;
+  height: 100vh;
+  overflow-y: auto;	
+  scroll-snap-type: y mandatory;
+  scroll-padding: 32px;
+  width: 100vw;	
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  padding: 32px;
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(10px);
+  cursor: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 512 512'%3e%3cg transform='rotate(45 256 256)'%3e%3crect id='r' x='16' y='236' width='480' height='40' rx='14' fill='%23ececec'/%3e%3cuse href='%23r' transform='rotate(90 256 256)' fill='%23ececec'/%3e%3c/g%3e%3c/svg%3e") 16 16, pointer;
+  /* make scroll snap */
+  > div {
+    scroll-snap-align: center;
+  }
+  .gallery__item {
+    max-height: 800px;
+    height: 90vh;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &.is-horizontal{
+    flex-direction: row;
+    overflow-x: auto;	
+    scroll-snap-type: x mandatory;
+    .gallery__item {
+      min-width: fit-content;
+    }
+  }
+}
+.benefits{
+  display: grid;
+  gap: 24px;
+  justify-content: center;
+/*  text-align: center;*/
+  max-width: 400px;
+  margin: auto;
+}
+
+.benefits svg{
+  fill: currentColor;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 8px;
+}
+
+.benefits :is(h2, h3){
+  margin: 0;
+  margin-bottom: 0.5em;
+}
+.benefits__title{
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.benefits__subtitle{
+  font-weight: 300;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 801px){
+  .benefits{
+    grid-template-columns: repeat(3, 1fr);
+    min-width: 100%;
+  }
+  .benefits__title{
+    font-size: 28px;
+  }
+  .benefits__subtitle{
+    font-size: 16px;
+  }
+}
+.reviews.is-short{
+  max-width: 700px;
+  background-color: var(--background-color-milk);
+  border-radius: 15px;
+  margin: auto;
+  padding: 16px;
+  gap: 24px;
+}
+
+.reviews.is-short .reviews__item:not(:last-child){
+  padding-bottom: 24px;
+}
+* { box-sizing: border-box; }
+/* Define @font-face for each custom font using WOFF2 format */
+
+@font-face {
+  font-family: "Rubik";
+  font-display: swap;
+  src: url("/fonts/Rubik-VariableFont_wght.ttf") format("truetype");
+  font-style: normal;
+  font-stretch: 25% 150%;
+  font-weight: 300 600;
+}
+
+/*
+
+Available font weights are:  300, 400,500, 600
+
+*/
+
+/* Updated CSS variables with custom fonts */
+:root {
+  --font-family: "Rubik", sans-serif;
+}
+
+/* Theme colors */
+:root {
+  --color-gray-20: #e0e0e0;
+  --color-gray-50: #b0b0b0;
+  --color-gray-90: #2e2e2e;
+  --color-yellow: #ffce00;
+  --color-dark-green: #0d7745;
+
+  --background-color: #ffffff;
+  --background-color-rgb: 255 255 255;
+  --background-color-milk: #f9f9f9;
+  --background-color-chocolate: #2a1b2f;
+
+  --text-color: var(--color-gray-90);
+  --text-color-link: #007acc;
+  --text-color-link-active: #005bb5;
+  --text-color-link-visited: #803f74;
+
+  --syntax-tab-size: 2;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-gray-20: #dcdcdc;
+    --color-gray-50: #a9a9a9;
+    --color-gray-90: #f0f0f0;
+    --color-yellow: #ffdd00;
+    --color-dark-green: #14a76c;
+
+    --text-color-link: #66c2ff;
+    --text-color-link-active: #3399ff;
+    --text-color-link-visited: #a366cc;
+
+    --background-color: #121212;
+    --background-color-rgb: 18 18 18;
+    --background-color-milk: #1e1e1e;
+  }
+}
+
+
+/* Global stylesheet */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0 auto;
+  font-family: var(--font-family);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  scroll-padding-top: 50px;
+  scroll-margin-top: 50px;
+  list-style: none;
+  line-height: 1.4;
+}
+
+body {
+  /*	max-width: 60em;*/
+}
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+p {
+  line-height: 1.5;
+}
+
+a {
+  color: var(--text-color);
+}
+
+li {
+  line-height: 1.5;
+}
+
+table {
+  margin: 1em 0;
+}
+table td,
+table th {
+  padding-right: 1em;
+}
+
+pre,
+code {
+  font-family: var(--font-family-monospace);
+}
+pre:not([class*="language-"]) {
+  margin: 0.5em 0;
+  line-height: 1.375; /* 22px /16 */
+  -moz-tab-size: var(--syntax-tab-size);
+  -o-tab-size: var(--syntax-tab-size);
+  tab-size: var(--syntax-tab-size);
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+}
+code {
+  word-break: break-all;
+}
+
+.subtitle {
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+  max-width: 400px;
+}
+
+.badge {
+  background: var(--background-color-milk);
+  color: var(--color-text);
+  display: inline-flex;
+  justify-content: center;
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 0.5em;
+  font-size: 12px;
+  width: fit-content;
+  height: fit-content;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.price__text {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.price__note {
+  font-weight: 200;
+  font-size: 12px;
+}
+
+.buy-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.buy-form__options {
+  display: flex;
+  gap: 16px;
+}
+
+.buy-form__options input {
+  display: none;
+}
+
+
+.buy-form__action {
+  display: flex;
+  gap: 24px;
+  .button{
+    /* 50% on desktop, mobile 100% */
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .buy-form__action {
+    flex-direction: column;
+    gap: 16px;
+    .button{
+      width: 100%;
+    }
+  }
+}
+
+.reviews-star {
+  display: inline-flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.3em;
+  width: fit-content;
+  margin: auto;
+  font-size: 20px;
+}
+.reviews-star__icon {
+  margin: 0.3em;
+}
+.reviews-star__icon svg {
+  width: 1.5em;
+  height: 1.5em;
+}
+.reviews-star__body {
+  display: inline-flex;
+  align-items: center;
+}
+.reviews-star__number {
+  font-weight: 600;
+  font-size: 1.5em;
+  margin-left: 0.3em;
+}
+.reviews-star__text {
+  width: 100%;
+  font-weight: 200;
+  font-size: 0.8em;
+  text-align: center;
+}
+.reviews-star a {
+  text-decoration: none;
+}
+
+
+.meta-tags{
+  display: flex;
+  gap: 16px;
+  /* justify-content: center; */
+  span, time{
+    font-size: 13px;
+    text-decoration: none;
+    padding: 0.3em 0.7em;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: var(--background-color);
+  }
+}
+			.cart-container{
+  &.hidden{
+    display: none;
+  }
+}
+
+.cart-link{
+  position: relative;
+  display: inline-flex;
+  &.has-items{
+    /* animated dots */
+    &::before{
+      content: '';
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      background-color: var(--color-yellow);
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+      top: -2px;
+      right: 9px;
+      z-index: 1;
+    }
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.cart{
+  width: 100%;
+  padding: 16px;
+  background-color: var(--background-color);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  z-index: 1;
+  margin-top: 20px;
+  width: 450px;
+  max-width: 400px;
+  right: 0;
+  top: 32px;
+  text-align: center;
+  .hidden{
+    display: none;
+  }
+  h2{
+    margin: 0;
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+
+  .cart__note{
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 16px 4px 0 4px;
+    /* border-top: 1px solid var(--color-gray-90); */
+  }
+
+  .cart__footer{
+    button{
+      width: 100%;
+    }
+    #checkoutButton{
+      margin-bottom: 8px;
+    }
+    #edit-cart{
+      display: inline-block;
+      padding: 8px 4px;
+      font-size: 14px;
+    }
+  }
+
+  .cart__footer__total{
+    margin-top: 8px;
+    padding-bottom: 16px;
+    /* margin-bottom: 8px; */
+    font-size: 16px;
+    font-weight: 600;
+    text-align: right;
+    span:first-child{
+      font-weight: 300;
+    }
+  }
+  .cart__footer__total__price{
+    font-size: 24px;
+  }
+}
+
+/* If we are in the checkout/cart page */
+body[data-page-type="checkout"]{
+
+  .header__cart{
+    pointer-events: none;
+  }
+
+  .cart-container{
+    display: block !important;
+  }
+  .cart{
+    position: sticky;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: none;
+  }
+  #edit-cart{
+    display: none !important;
+  }
+}
+
+.cart-item{
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  gap: 16px;
+  &:not(:last-child){
+    border-bottom: 1px solid var(--color-gray-20);
+    padding-bottom: 16px;
+  }
+  .cart-item__media{
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    img{
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+
+  }
+
+  > div{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  p{
+    margin: 0;
+    font-size: 14px;
+    color: var(--color-gray-60);
+  }
+
+  small{
+    font-size: 12px;
+  }
+
+  small{
+    font-weight: 300;
+  }
+
+  .cart-item__details{
+    flex: 1;
+    text-align: center;
+    h3{
+      margin: 0;
+      font-size: 18px;
+      /* font-weight: 400; */
+      margin-bottom: 8px;
+    }
+  }
+  .cart-item__price{
+    text-align: right;
+  }
+  .cart-item__prices{
+    font-weight: 500;
+    font-size: 16px;
+    text-align: right;
+    margin-bottom: 8px;
+  }
+
+  .cart-item-price{
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .cart-item__remove-button{
+    background: none;
+    border: none;
+    color: var(--color-gray-90);
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 12px;
+    font-weight: 200;
+    text-align: right;
+    &:hover{
+      color: var(--color-red);
+      text-decoration: none;
+    }
+  }
+}
+
+.quantity-box{
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+  width: 90px;
+  height: 30px;
+  border: 1px solid var(--color-gray-50);
+  overflow: hidden;
+  border-radius: 5px;
+  -webkit-user-select: none;
+  user-select: none;
+  min-width: 90px;
+  max-width: 90px;
+  button{
+    color: white;
+    border: none;
+    width: 40%;
+    height: 100%;
+    cursor: pointer;
+    font-size: 20px;
+    background: none;
+    color: var(--color-gray-90);
+    -webkit-appearance: none;
+    border-radius: 0;
+    background: none;
+    padding: 0;
+    margin: 0;
+  }
+  input{
+    background-color: var(--color-gray-20);
+    width: 30px;
+    height: 100%;
+    border: none;
+    text-align: center;
+    border-left: 1px solid var(--color-gray-50);
+    border-right: 1px solid var(--color-gray-50);
+    padding: 4px;
+    font-size: 14px;
+    font-weight: 300;
+    border-radius: 0;
+  }
+}
+
+body{
+  &:has(.cart-container:not(.hidden)){
+   > main {
+      filter: blur(10px);
+      pointer-events: none;
+      }
+    }
+}
+			.address{
+  padding: 24px 0;
+  line-height: 1.6;
+  &.in-footer{
+    font-size: 12px;
+    font-weight: 300;
+  }
+
+  .address__phone{
+    font-size: 12px;
+  }
+}
+			.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  background-color: rgb(var(--background-color-rgb) / 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  height: 50px;
+  border-bottom: 0.5px solid var(--color-gray-20);
+}
+
+.header__logo {
+  font-size: 24px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.header__cart {
+  text-align: right;
+}
+
+.header__inner {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  align-items: center;
+  height: 100%;
+  justify-content: space-between;
+  position: relative;
+}
+
+.header nav {
+  height: 100%;
+}
+
+.header nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  height: 100%;
+  padding: 0;
+}
+
+.header nav a {
+  text-decoration: none;
+  display: inline-flex;
+  padding: 0.7em;
+  align-items: center;
+  height: 100%;
+  font-weight: 300;
+  white-space: nowrap;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+  z-index: 999;
+}
+
+.menu-icon .bar {
+  display: block;
+  width: 24px;
+  height: 2px; /* Less bold */
+  background-color: var(--text-color);
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.menu-icon.menu-open .bar:nth-child(1) {
+  -webkit-transform: translateY(5px) rotate(45deg);
+  transform: translateY(5px) rotate(45deg);
+}
+
+/* Rotate second bar */
+.menu-icon.menu-open .bar:nth-child(2) {
+  -webkit-transform: translateY(-3px) rotate(-45deg);
+  transform: translateY(-3px) rotate(-45deg);
+}
+
+@media screen and (max-width: 800px) {
+  .header nav a {
+    padding: 0.3em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header nav {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100dvh;
+    padding: 32px;
+    padding-top: 10%;
+    z-index: 2;
+    background-color: rgb(var(--background-color-rgb) / 0.99);
+  }
+  .home-link {
+    transition: all 0.3s ease;
+    opacity: 1;
+    position: relative;
+    z-index: 100;
+  }
+  body.is-menu-open {
+    overflow: hidden;
+    .home-link, .cart-link {
+      opacity: 0;
+    }
+  }
+  .header ul {
+    flex-direction: column;
+    gap: 8px;
+    font-size: 24px;
+    li {
+      opacity: 0; /* Menu items start invisible */
+      transform: translateY(-15px);
+      transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+    }
+  }
+  .header nav a {
+    font-weight: 400;
+  }
+  .menu-icon {
+    display: inline-block;
+    margin-left: 32px;
+    order: 3;
+    position: relative;
+  }
+
+  .header__cart {
+    margin-left: auto;
+    margin-right: 0;
+    order: 2;
+    margin-top: 8px;
+  }
+
+  .menu-icon.menu-open + nav {
+    opacity: 1;
+    visibility: visible;
+    li {
+      opacity: 1; /* Menu items fade in */
+      transform: translateY(0);
+    }
+  }
+}
+
+			/* Theme colors */
+:root {
+  /* Button specific colors */
+  --button-color-primary: #0d7745; /* Similar to dark green */
+  --button-color-primary-hover: #0b6a3d;
+  --button-color-primary-active: #095f35;
+  --button-color-outlined-hover: #0b6a3d;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Button specific colors */
+    --button-color-primary: #14a76c; /* Dark mode green */
+    --button-color-primary-hover: #129461;
+    --button-color-primary-active: #108258;
+    --button-color-outlined-hover: #129461;
+  }
+}
+
+/* Base button styles */
+.button {
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 500;
+  transition:
+    background-color 0.1s,
+    border-color 0.1s,
+    color 0.1s,
+    box-shadow 0.1s;
+  border-radius: 8px;
+  padding: 8px 24px;
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+
+  &.is-wide {
+    width: 100%;
+  }
+}
+
+/* Solid buttons */
+.button-solid {
+  background: var(--button-color-primary);
+  color: var(--background-color);
+  border: 1px solid transparent;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  &:hover, &:active {
+    background: transparent;
+    color: var(--button-color-primary);
+    border-color: var(--button-color-primary);
+    font-weight: 600;
+  }
+}
+
+/* Outlined buttons */
+.button-outlined {
+  background: transparent;
+  color: var(--button-color-primary);
+  border: 1px solid var(--button-color-primary);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    background: var(--button-color-outlined-hover);
+    color: var(--background-color);
+  }
+
+  &:active {
+    background: var(--button-color-primary-active);
+  }
+}
+
+/* Button sizes */
+.button-small {
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+.button-medium {
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.button-large {
+  padding: 16px 32px;
+  font-size: 16px;
+}
+
+.button-full {
+  width: 100%;
+}
+
+/* Remove the tap highlight color on mobile devices */
+a, button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.buy-form__options input:checked + label.button {
+  background: var(--button-color-primary);
+  color: var(--background-color);
+}
+
+
+/* Tags */
+.tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  a {
+    color: var(--text-color);
+    display: inline-flex;
+    justify-content: center;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 0.3em 0.7em;
+    font-size: 11px;
+    width: fit-content;
+    height: fit-content;
+    text-decoration: none;
+    background-color: var(--background-color-milk);
+
+    &:hover {
+      background-color: var(--color-yellow);
+      color: var(--background-color);
+    }
+  }
+}
+
+			.banner{
+	color: var(--background-color);
+	background: #444; 
+	height: 60svh;
+	position: relative;
+}
+
+/* on mobile 800 and less make svh more */
+
+@media(max-width: 800px){
+	.banner{
+		height: 70vh;
+	}
+}
+
+
+/* overlay to make text visible  */
+
+.banner::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(0,0,0,0.3);
+	z-index: 2;
+}
+
+/* if prefer dark, need to change overlay color */
+
+@media(prefers-color-scheme: dark){
+	.banner::before{
+		background: rgba(255,255,255,0.3);
+	}
+}
+
+
+
+.banner__media{
+	position: absolute;
+	top:0;
+	left: 0;
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+}
+
+.banner__content{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	position: relative;
+	z-index: 2;
+	gap: 20px;
+	height: 100%;
+	max-width: 700px;
+	padding: 0 20px;
+	margin: auto;
+	text-align: center;
+}
+
+.banner h1, .banner h2{
+	margin: 0;
+}
+
+.banner h1{
+	font-size: 16px;
+	font-weight: 500;
+
+}
+
+.banner h2{
+	font-size: 40px;
+	font-weight: 600;
+	font-family: var(--font-family-display);
+}
+
+.banner__media img{
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+			.boxes {
+  display: grid;
+  gap: 24px;
+  text-align: center;
+}
+
+.boxes img {
+  /*rounded borders with modern shadow    */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.boxes__content {
+  display: contents;
+}
+
+.boxes h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.boxes h3 {
+  font-size: 24px;
+  margin: 0;
+  text-wrap: balance;
+  margin-bottom: 0.7em;
+}
+
+.boxes ul {
+  list-style-position: inside;
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+}
+
+.boxes ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.boxes__media {
+  order: 1;
+}
+
+.boxes__title {
+  order: 0;
+}
+
+.boxes__description {
+  order: 2;
+  p {
+    margin-top: 0;
+  }
+}
+
+/* Mobile styles - No specific changes needed as the default behavior
+   should stack the title and description above the image */
+
+@media (min-width: 801px) {
+  .boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: initial;
+    gap: 40px;
+    &.is-reversed {
+      grid-template-columns: 1fr 1fr;
+      .boxes__media {
+        order: 1;
+      }
+      .boxes__content {
+        order: 2;
+      }
+    }
+  }
+
+  .boxes h2 {
+    font-size: 32px;
+  }
+
+  /*  reset order  */
+
+  .boxes__title,
+  .boxes__media,
+  .boxes__description {
+    order: initial;
+  }
+
+  .boxes__content {
+    display: initial;
+  }
+
+  .boxes__content,
+  .boxes__media {
+    order: 0; /* Reset any order applied elsewhere */
+  }
+}
+
+			.reviews{
+	padding-top: 32px;
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+
+.reviews__item:not(:last-child){
+	border-bottom: 1px solid var(--color-gray-20);
+	padding-bottom: 32px;
+}
+
+.reviews__meta{
+	display: grid;
+	grid-template-columns: 1fr auto;
+	margin-bottom: 4px;
+}
+
+.reviews__author{
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.reviews__author em{
+	font-weight: 300;
+	font-size: 12px;
+}
+
+.reviews__date{
+	font-size: 12px;
+	font-weight: 300;
+}
+
+.reviews__score{
+	margin-bottom: 24px;
+}
+
+.reviews__title{
+	font-size: 18px;
+	margin: 0;
+/*	margin-top: 1em;*/
+	margin-bottom: 0.7em;
+	font-weight: 500;
+}
+
+.reviews__body{
+	font-size: 16px;
+	font-weight: 300;
+}
+
+			.footer {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 40% 1fr;
+}
+
+.footer a {
+  color: #fff;
+  font-size: 16px;
+  padding: 5px 0;
+  text-decoration-style: solid;
+  text-decoration-thickness: 0px;
+  text-decoration-color: transparent;
+  transition:
+    text-decoration-color 0.3s,
+    text-decoration-thickness 0.3s;
+}
+
+.footer ul a:hover {
+  text-decoration: underline;
+  text-decoration-color: currentColor;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+}
+
+.footer-logo {
+  margin-bottom: 24px;
+}
+
+.footer-logo a {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.footer__right {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer li {
+  margin-bottom: 16px;
+}
+
+.social {
+  border-top: 1px solid var(--text-color);
+}
+
+.social__title {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.social__list {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.social a {
+  display: inline-flex;
+  color: var(--color-gray-20);
+}
+
+.social a:hover {
+  filter: brightness(1.5);
+}
+
+.social a svg {
+  width: 24px;
+  height: 24px;
+}
+
+@media screen and (max-width: 800px) {
+  .footer {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__right {
+    border-left: none;
+    border-top: 1px solid var(--text-color);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer__right {
+    grid-template-columns: 1fr;
+  }
+  .footer-logo {
+    margin-bottom: 0;
+  }
+  .footer__left {
+    display: contents;
+  }
+  .social {
+    order: 6;
+  }
+}
+
+			.footer-bar {
+  display: grid;
+  gap: 24px;
+  justify-content: center;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+.copy {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  font-weight: 200;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+}
+
+.copy span:first-child {
+  letter-spacing: 0.1em;
+}
+
+.legal-links {
+  font-size: 14px;
+  font-weight: 300;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  max-width: 500px;
+}
+
+.legal-links a {
+  display: inline-flex;
+  padding-right: 6px;
+  padding-bottom: 6px;
+}
+
+			.section {
+  padding: 60px 0;
+  background-color: var(--background-color-milk);
+
+  &.is-narrow {
+    padding: 20px 0;
+  }
+
+  &.is-center {
+    text-align: center;
+  }
+
+  &.is-banner {
+    background-color: transparent;
+  }
+  &.is-post {
+    .section__content {
+      max-width: 800px;
+      margin-inline: auto;
+      h1 {
+        text-wrap: pretty;
+      }
+      img:first-of-type {
+        float: right;
+        width: 40%;
+        margin: 8px 0 16px 16px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        overflow: hidden;
+        @media screen and (max-width: 600px) {
+          width: 100%;
+          float: none;
+          margin: 8px 0 16px 0;
+          height: 200px;
+          display: block;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+
+.section__header {
+  margin-bottom: 40px;
+  text-align: center;
+  display: grid;
+  gap: 16px;
+  justify-content: center;
+}
+
+.section__title {
+  font-family: var(--font-family-display);
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  margin: 0;
+}
+
+.section__subtitle {
+  font-weight: 500;
+  font-size: 32px;
+  margin: 0;
+}
+
+.section__description {
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+@media screen and (max-width: 800px) {
+  .section__title {
+    font-size: 32px;
+    font-weight: 500;
+  }
+  .section__subtitle {
+    font-weight: 500;
+    font-size: 24px;
+  }
+
+  .section {
+    padding: 30px 0;
+  }
+  .section.is-narrow {
+    padding: 10px 0;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  user-select: none;
+}
+
+.section__inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.section__footer {
+  padding-top: 40px;
+  text-align: center;
+}
+
+/* Animation for $177 */
+@keyframes discountAnimation {
+    0% {
+        color: lightgreen;
+        text-shadow: 0 0 10px lightgreen; /* Light green glow */
+    }
+    50% {
+        color: darkgreen;
+        text-shadow: 0 0 15px darkgreen; /* Dark green glow */
+    }
+    100% {
+        color: lightgreen;
+        text-shadow: 0 0 10px lightgreen; /* Light green glow */
+    }
+}
+
+/* Apply animation to price text */
+.price__text {
+    animation: discountAnimation 1.5s ease-in-out infinite alternate;
+}
+/* Animation for $177 */
+
+
+.price {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center items vertically */
+}
+
+.pay-now,
+.price__text {
+    display: inline-block; /* or display: inline; */
+    /* Optionally, you can add styles such as margin, padding, etc., to adjust spacing */
+}
+
+.price__note {
+    margin-left: 10px; /* Add some space between the current price and the note */
+    color: gray; /* Optionally set color of the note */
+}
+
+/* Green line over old price */
+.old-price {
+    color: green; /* Set color of the text to green */
+    position: relative; /* Position relative for positioning the line */
+}
+
+.old-price::before {
+    content: ""; /* Create a pseudo-element for the line */
+    position: absolute; /* Position absolutely */
+    top: 50%; /* Position at the middle of the text */
+    left: 0; /* Start from the beginning of the text */
+    width: 100%; /* Make the line span the width of the text */
+    border-top: 2px solid rgb(120, 235, 120); /* Set the line style */
+}
+
+/* Green line over old price */
+
+/* Container for discount $177 */
+.price {
+    background-color: #f8f7f7; /* Faint grey background color */
+    padding: 10px; /* Add some padding for spacing */
+    border-radius: 10px;
+}
+
+/* Container for discount $177 */
+
+
+</style><link rel="prefetch" href="/pillow/"><link rel="prefetch" href="/reviews/"></head><body data-page-type="product"><a href="#skip" class="visually-hidden">Skip to main content</a><header class="header"><div class="header__inner"><a href="/" class="home-link header__logo">Siestly</a> <button id="menuButton" class="menu-icon jsMobileMenuButton" aria-label="Open Mobile Menu"><div class="bar"></div><div class="bar"></div></button><nav><h2 class="visually-hidden">Top level navigation menu</h2><ul class="nav"><li class="nav-item"><a arial-label="Buy Siestly Pillow" role="button" href="/pillow/" aria-current="page">Shop Now</a></li><li class="nav-item"><a arial-label="Siestly Pillow Reviews" role="button" href="/reviews/">Reviews</a></li><li class="nav-item"><a arial-label="Frequency Asked Questions" role="button" href="/faq/">FAQ</a></li><li class="nav-item"><a arial-label="Insights and articles about sleeping" role="button" href="/insights/">Insights</a></li><li class="nav-item"><a arial-label="Contact Siestly customer service" role="button" href="/contact/">Contact Us</a></li></ul></nav><div class="header__cart"><a href="/cart/" class="cart-link" aria-label="Cart Icon" role="button" id="cartButton"><svg style="fill:var(--text-color);" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg></a><template id="cartTemplate" style="display: none;" aria-hidden="true"><div class="cart"><div class="cart__header"><h2>Your Shopping Cart</h2></div><div class="cart__body"></div><div class="cart__footer hidden"><div class="cart__footer__total"><span>Total: </span><span class="cart__footer__total__price jsTotal"></span></div><a href="/cart/" class="button button-large button-solid button-full" id="checkoutButton" aria-label="Complete Checkout">Complete Checkout</a><br><a href="/cart/" aria-label="Edit Cart" id="edit-cart">Edit Cart</a><div class="shipping-notice"><strong>Free Shipping</strong> on all orders.<br>Buy now and get it by <strong class="jsShippingDate">Friday, August 20</strong>.</div></div><div class="cart__empty hidden">Your cart is empty.</div></div></template><div id="cart" class="cart-container hidden"></div></div></div></header><main id="skip">
+
+<section class="section" style="background-color: var(--background-color);">
+    <div class="section__inner">
+        <div class="product">
+            <div class="product__media">
+                <div class="gallery is-horizontal_">
+                    <div class="gallery__item">
+                        <picture>
+                            <source type="image/avif" srcset="/img/siestly-pillow-3-800w.png 800w" sizes="(max-width: 800px) 800px, 100vw">
+                            <source type="image/webp" srcset="/img/siestly-pillow-3-800w.png 800w" sizes="(max-width: 800px) 800px, 100vw">
+                            <img alt="Siestly Pillow Product Image" loading="eager" decoding="async" src="/img/siestly-pillow-3-800w.png" width="800" height="800">
+                        </picture>
+                    </div>
+                    <div class="gallery__item">
+                        <picture>
+                            <source type="image/avif" srcset="/img/siestly-pillow-1-800w.png 800w" sizes="(max-width: 800px) 800px, 100vw">
+                            <source type="image/webp" srcset="/img/siestly-pillow-1-800w.png 800w" sizes="(max-width: 800px) 800px, 100vw">
+                            <img alt="Siestly Pillow Product Image" loading="eager" decoding="async" src="/img/siestly-pillow-1-800w.png" width="800" height="800">
+                        </picture>
+                    </div>
+                    <div class="gallery__item">
+                        <picture>
+                            <source type="image/avif" srcset="/img/siestly-pillow-10-800w.png 800w" sizes="(max-width: 800px) 800px, 100vw">
+                            <source type="image/webp" srcset="/img/siestly-pillow-10-800w.png 800w" sizes="(max-width: 800px) 800px, 100vw">
+                            <img alt="Siestly Pillow Product Image" loading="eager" decoding="async" src="/img/siestly-pillow-10-800w.png" width="800" height="800">
+                        </picture>
+                    </div>
+                    <div class="gallery__item">
+                        <picture>
+                            <source type="image/avif" srcset="/img/siestly-pillow-2-800w.png 800w" sizes="(max-width: 800px) 800px, 100vw">
+                            <source type="image/webp" srcset="/img/siestly-pillow-2-800w.png 800w" sizes="(max-width: 800px) 800px, 100vw">
+                            <img alt="Siestly Pillow Product Image" loading="eager" decoding="async" src="/img/siestly-pillow-2-800w.png" width="800" height="800">
+                        </picture>
+                    </div>
+                    <div class="gallery__item">
+                        <picture>
+                            <source type="image/avif" srcset="/img/siestly-pillow-11-800w.png 800w" sizes="(max-width: 800px) 800px, 100vw">
+                            <source type="image/webp" srcset="/img/siestly-pillow-11-800w.png 800w" sizes="(max-width: 800px) 800px, 100vw">
+                            <img alt="Siestly Pillow Product Image" loading="eager" decoding="async" src="/img/siestly-pillow-11-800w.png" width="800" height="800">
+                        </picture>
+                    </div>
+                    <div class="gallery__item">
+                        <picture>
+                            <source type="image/avif" srcset="/img/siestly-pillow-4-800w.png 800w" sizes="(max-width: 800px) 800px, 100vw">
+                            <source type="image/webp" srcset="/img/siestly-pillow-4-800w.png 800w" sizes="(max-width: 800px) 800px, 100vw">
+                            <img alt="Siestly Pillow Product Image" loading="eager" decoding="async" src="/img/siestly-pillow-4-800w.png" width="800" height="800">
+                        </picture>
+                    </div>
+                    <div class="gallery__item">
+                        <picture>
+                            <source type="image/avif" srcset="/img/siestly-pillow-5-800w.png 800w" sizes="(max-width: 800px) 800px, 100vw">
+                            <source type="image/webp" srcset="/img/siestly-pillow-5-800w.png 800w" sizes="(max-width: 800px) 800px, 100vw">
+                            <img alt="Siestly Pillow Product Image" loading="eager" decoding="async" src="/img/siestly-pillow-5-800w.png" width="800" height="800">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="product__content">
+                <div class="product__headline">
+                    <div class="product__meta">
+                        <div class="badge">BLACK</div>
+                        <div class="reviews-star" style="font-size: 15px">
+                            <a href="/pillow/#product-revies-section" class="reviews-star__body">
+                                <span class="reviews-star__icon">
+                                    <svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/>
+                                    </svg>
+                                </span>
+                                <span class="reviews-star__icon">
+                                    <svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/>
+                                    </svg>
+                                </span>
+                                <span class="reviews-star__icon">
+                                    <svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/>
+                                    </svg>
+                                </span>
+                                <span class="reviews-star__icon">
+                                    <svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/>
+                                    </svg>
+                                </span>
+                                <span class="reviews-star__icon">
+                                    <svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/>
+                                    </svg>
+                                </span>
+                                <strong class="reviews-star__rating">5.0</strong>
+                                <span class="reviews-star__count">(245 reviews)</span>
+                            </a>
+                        </div>
+                    </div>
+                    <h1 class="title">Siestly Pillow</h1>
+                    <h2 class="subtitle">We created Siestly Pillow to have your proper sleep posture in mind.</h2>
+                </div>
+                <div class="product__prices">
+                    
+                    <div class="price">
+                        <!-- <span>PAY NOW $88.5 </span> <span class="price__text jsPrice">$177</span> -->
+                        <!-- <span class="pay-now">PAY NOW $88.5 </span> -->
+                        <span class="pay-now">PAY NOW <span class="old-price">$354</span></span>
+                           <span class="price__text jsPrice">$177</span>
+                        <strong class="price__note">Always fair price, no fake discounts</strong>
+                    </div>
+                    
+                </div>
+                
+                <div class="product__description">
+                    <p>We're so confident that you'll love our pillow that we offer a 100-night trial. If you don't love it, you can return it for a full refund, no questions asked.</p>
+                </div>
+                <div class="product__action">
+                    <form action="/checkout/" method="post" class="buy-form" id="product-form">
+                        <input type="hidden" name="product" value="pillow">
+                        <input type="hidden" name="color" value="black">
+                        <input type="hidden" name="size" value="standard" id="size-input">
+                        <strong>Select size:</strong>
+                        <div class="buy-form__options">
+                            <label class="radio">
+                                <button type="submit" class="button button-sm button-solid"  role="button">Standard</button>
+                  
+                            </label>
+                            <label class="radio">
+                                <button type="submit" class="button button-sm button-solid"  role="button">King</button>
+                                
+                            </label>
+                        </div>
+                        <div hidden>
+                            <strong>Color:</strong>
+                            <div class="buy-form__options">
+                                <label class="radio">
+                                    <input type="radio" name="color" value="black" checked>
+                                    <span class="radio__icon"></span>
+                                    Black
+                                </label>
+                            </div>
+                        </div>
+                        <div class="shipping-notice">
+                            <strong>Free Shipping</strong> on all orders.<br>Buy now and get it by <strong>Friday, June 7.</strong>.
+                        </div>
+                        <div class="buy-form__action">
+                            <button type="submit" class="button button-large button-solid" name="cart" role="button" aria-label="Add To cart: Siestly Pillow">Add To Cart</button>
+                            <button type="submit" class="button button-large button-solid" name="checkout" role="button" aria-label="Buy Now: Siestly Pillow">Buy Now</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- Details -->
+                <!-- <div class="product__details">
+                    <h3 class="details__title">Details</h3>
+                    <ul class="details__list">
+                        <li class="details__item">Material: Memory Foam</li>
+                        <li class="details__item">Size Options: Standard, King</li>
+                        <li class="details__item">Color: Black</li>
+                        <li class="details__item">Trial Period: 100 nights</li>
+                        <li class="details__item">Shipping: Free, Estimated Delivery by Friday, August 20</li>
+                    </ul>
+                </div> -->
+
+                <!-- Details Section -->
+                <div class="col-12 accordion product__accordion margin__bottom--reduced">
+                    <input type="radio" id="5394be81-7fbd-4a0d-a5b5-cec4814a1995--close" name="5394be81-7fbd-4a0d-a5b5-cec4814a1995">
+                    <label class="accordion__item" >
+                        <input type="radio" name="5394be81-7fbd-4a0d-a5b5-cec4814a1995">
+                        <hr>
+                        <span class="accordion__item--title"><h3>Details</h3><label class="collapse" for="5394be81-7fbd-4a0d-a5b5-cec4814a1995--close"></label></span>
+                        <hr>
+                        <div class="accordion__item--content inherit">
+                            <span class="metafield-multi_line_text_field">
+                                <!-- <li class="details__item">Material: Memory Foam</li> -->
+                            <li class="details__item">Size Options: Standard, King</li>
+                            <li class="details__item">Color: Black</li>
+                            <li class="details__item">Trial Period: 100 nights</li>
+                            <li class="details__item">Shipping: Free, Estimated Delivery by Friday, June 7</li>
+                            </span>
+                        </div>
+                    </label>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Add your CSS styles here -->
+<style>
+    .accordion {
+        margin-top: 20px;
+        background-color: #f8f7f7; /* Faint grey background color */
+    }
+    .accordion__item {
+        display: block;
+        cursor: pointer;
+        margin-bottom: 10px;
+    }
+    .accordion__item--title {
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .accordion__item--content {
+        display: none;
+        padding: 10px;
+        background-color: #f1f1f1;
+        border-radius: 5px;
+    }
+    .accordion input[type="radio"] {
+        display: none;
+    }
+    .accordion input[type="radio"]:checked ~ .accordion__item--content {
+        display: block;
+    }
+    .collapse:before {
+        content: "-";
+        font-size: 2em; 
+        display: inline-block;
+        margin-left: 10px;
+        padding-right: 20px;
+    }
+    input[type="radio"]:checked ~ label .collapse:before {
+        content: "+";
+        font-size: 2em; 
+        padding-right: 20px;
+    }
+</style>
+
+                <!-- Details -->
+            </div>
+        </div>
+    </div>
+</section>
+
+
+      <section class="section"><div class="section__inner"><div class="benefits"><div class="benefits__item"><div class="benefits__icon"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m320-240 160-122 160 122-60-198 160-114H544l-64-208-64 208H220l160 114-60 198ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg></div><div class="benefits__content"><h2 class="benefits__title">Made in USA</h2><h3 class="benefits__subtitle">Siestly is fully made in the USA. From the fabric to the final product, we are committed to delivering the highest quality, American-made products.</h3></div></div><div class="benefits__item"><div class="benefits__icon"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m226-559 78 33q14-28 29-54t33-52l-56-11-84 84Zm142 83 114 113q42-16 90-49t90-75q70-70 109.5-155.5T806-800q-72-5-158 34.5T492-656q-42 42-75 90t-49 90Zm178-65q-23-23-23-56.5t23-56.5q23-23 57-23t57 23q23 23 23 56.5T660-541q-23 23-57 23t-57-23Zm19 321 84-84-11-56q-26 18-52 32.5T532-299l33 79Zm313-653q19 121-23.5 235.5T708-419l20 99q4 20-2 39t-20 33L538-80l-84-197-171-171-197-84 167-168q14-14 33.5-20t39.5-2l99 20q104-104 218-147t235-24ZM157-321q35-35 85.5-35.5T328-322q35 35 34.5 85.5T327-151q-25 25-83.5 43T82-76q14-103 32-161.5t43-83.5Zm57 56q-10 10-20 36.5T180-175q27-4 53.5-13.5T270-208q12-12 13-29t-11-29q-12-12-29-11.5T214-265Z"/></svg></div><div class="benefits__content"><h2 class="benefits__title">1-2 Day Free Delivery</h2><h3 class="benefits__subtitle">Get quick, cost-free delivery with our 1-2 Day Free Shipping service, designed for your convenience and satisfaction.</h3></div></div><div class="benefits__item"><div class="benefits__icon"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M240-40v-329L110-580l185-300h370l185 300-130 211v329l-240-80-240 80Zm80-111 160-53 160 53v-129H320v129Zm20-649L204-580l136 220h280l136-220-136-220H340Zm98 383L296-558l57-57 85 85 169-170 57 56-226 227ZM320-280h320-320Z"/></svg></div><div class="benefits__content"><h2 class="benefits__title">Rigorous Quality Assurance</h2><h3 class="benefits__subtitle">Strict USA Manufacturing Standards Ensure Premium Quality Products.</h3></div></div></div></div></section><section class="section" style="background-color: var(--background-color)"><div class="section__inner"><header class="section__header"><h2 class="section__title">Top Reasons to Choose the Siestly Pillow</h2></header><div class="section__content"><div class="boxes"><div class="boxes__content"><h3 class="boxes__title">Ultimate Comfort</h3><div class="boxes__description"><p>Our unique blend of shredded foam and natural wool balls ensures you stay cool and comfortable all night. The combination of these materials creates a perfect balance between softness and firmness, providing the ideal sleeping environment.</p><p>You’ll enjoy a pillow that adapts to your head and neck contours, giving you the ultimate comfort that lasts through the night, helping you wake up refreshed and ready to face the day.</p></div></div><div class="boxes__media"><picture>
+  <source type="image/avif" srcset="img/ultimate-comfort.png 350w, img/ultimate-comfort.png 500w" sizes="(max-width: 800px) 800px, 100vw">
+  <source type="image/webp" srcset="img/ultimate-comfort.png 350w, img/ultimate-comfort.png 500w" sizes="(max-width: 800px) 800px, 100vw">
+  <img alt="Siestly Pillow Ultimate Comfort" loading="lazy" decoding="async" src="img/ultimate-comfort.png" width="500" height="333">
+</picture></div></div></div></div></section><section class="section"><div class="section__inner"><div class="section__content"><div class="boxes is-reversed"><div class="boxes__content"><h3 class="boxes__title">Stay Supported</h3><div class="boxes__description"><p>No more sinking or flattening—Siestly pillows maintain their shape and support your neck perfectly. Unlike traditional pillows that lose their form, our innovative design with shredded foam and wool balls ensures consistent support.</p><p>This means your neck and spine remain aligned throughout the night, reducing the chances of waking up with pain or stiffness. Enjoy the lasting durability and resilience of a pillow that truly supports you.</p></div></div><div class="boxes__media"><picture>
+    <source type="image/avif" srcset="img/stay-supported.png 350w, img/stay-supported.png 500w" sizes="(max-width: 800px) 800px, 100vw">
+    <source type="image/webp" srcset="img/ultimate-comfort.png 350w, img/stay-supported.png 500w" sizes="(max-width: 800px) 800px, 100vw">
+    <img alt="Siestly Stay Supported" loading="lazy" decoding="async" src="img/stay-supported.png" width="500" height="333">
+  </picture></div></div></div></div></section><section class="section" style="background-color: var(--background-color)"><div class="section__inner"><div class="section__content"><div class="boxes"><div class="boxes__content"><h3 class="boxes__title">Migraine Relief</h3><div class="boxes__description"><p>Designed specifically to keep your neck in a natural position, reducing strain and alleviating migraine pain. The ergonomic design of the Siestly pillow supports your cervical spine, reducing the tension that often triggers migraines.</p><p>By maintaining proper neck alignment, you can prevent the muscle strain and nerve pressure that lead to headaches. Sleep comfortably and wake up without the dread of a migraine, thanks to our targeted support system.</p></div></div><div class="boxes__media"><picture>
+    <source type="image/avif" srcset="img/migraine-relief.png 350w, img/migraine-relief.png 500w" sizes="(max-width: 800px) 800px, 100vw">
+    <source type="image/webp" srcset="img/migraine-relief.png 350w, img/migraine-relief.png 500w" sizes="(max-width: 800px) 800px, 100vw">
+    <img alt="Siestly Migrane Relief" loading="lazy" decoding="async" src="img/migraine-relief.png" width="500" height="333">
+  </picture></div></div></div></div></section><section class="section" id="product-reviews-section"><div class="section__inner"><header class="section__header"><div class="reviews-star"><div class="reviews-star__body"><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><strong class="reviews-star__number">4.9</strong></div><span class="reviews-star__text">Based on <b>48</b> Reviews</span></div><h2 class="section__title">Siestly Reviews</h2><h3 class="section__subtitle">What Our Customers Say About Siestly Pillow</h3></header><div class="section__content" id="reviews"><div class="reviews"><div class="reviews__item"><div class="reviews__meta"><div class="reviews__author">Ethan P.. <em>Verified order.</em></div><div class="reviews__date">05/30/2024</div></div><div class="reviews__score"><div class="reviews-star" style="font-size: 12px"><div class="reviews-star__body"><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><strong class="reviews-star__number">5</strong></div></div></div><h3 class="reviews__title">Outstanding Comfort and Service</h3><div class="reviews__body">I initially bought one Siestly pillow to see if it lived up to the hype and I was not disappointed. In fact, I regretted not taking advantage of the multi-buy discount. However, the support team was incredibly accommodating and offered me a special discount for my next purchase. I'm definitely buying a second one to complete my set!</div></div><div class="reviews__item"><div class="reviews__meta"><div class="reviews__author">Julia S.. <em>Verified order.</em></div><div class="reviews__date">05/29/2024</div></div><div class="reviews__score"><div class="reviews-star" style="font-size: 12px"><div class="reviews-star__body"><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><strong class="reviews-star__number">5</strong></div></div></div><h3 class="reviews__title">Surprisingly Effective</h3><div class="reviews__body">Initially, I thought my persistent neck pain stemmed from my mattress, leading me to replace it twice with no success. On a whim, I switched to a Siestly pillow and astonishingly, the neck pain vanished within a week. It turns out, all I needed was this well-designed pillow that offers both balance and support.</div></div><div class="reviews__item"><div class="reviews__meta"><div class="reviews__author">Arvin Riordan. <em>Verified order.</em></div><div class="reviews__date">02/28/2024</div></div><div class="reviews__score"><div class="reviews-star" style="font-size: 12px"><div class="reviews-star__body"><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><strong class="reviews-star__number">4.8</strong></div></div></div><h3 class="reviews__title">Siestly Pillow - Black</h3><div class="reviews__body">The black color of the Siestly pillow is a nice touch, I don't want to use pillow case ))), if you guys could sell some other bedding in the same color, that would be awesome. The pillow itself is super comfortable, especially I like the delegated massage effect from the wool balls.</div></div><div class="reviews__item"><div class="reviews__meta"><div class="reviews__author">Char Weigel. <em>Verified order.</em></div><div class="reviews__date">02/25/2024</div></div><div class="reviews__score"><div class="reviews-star" style="font-size: 12px"><div class="reviews-star__body"><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"> <?xml version="1.0" encoding="utf-8"?> <svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1306.181 1110.407c-28.461 20.781-40.32 57.261-29.477 91.03l166.136 511.398-435.05-316.122c-28.686-20.781-67.086-20.781-95.66 0l-435.05 316.122 166.25-511.623c10.842-33.544-1.017-70.024-29.591-90.805L178.577 794.285h537.825c35.351 0 66.523-22.701 77.365-56.245l166.25-511.51 166.136 511.397a81.155 81.155 0 0 0 77.365 56.358h537.939l-435.276 316.122Zm609.77-372.819c-10.956-33.656-42.014-56.244-77.365-56.244h-612.141l-189.064-582.1C1026.426 65.589 995.367 43 960.017 43c-35.351 0-66.523 22.588-77.365 56.245L693.475 681.344H81.335c-35.351 0-66.41 22.588-77.366 56.244-10.842 33.657 1.017 70.137 29.591 90.918l495.247 359.718-189.29 582.211c-10.842 33.657 1.017 70.137 29.704 90.918 14.23 10.39 31.059 15.586 47.661 15.586 16.829 0 33.657-5.195 47.887-15.699l495.248-359.718 495.02 359.718c28.575 20.894 67.088 20.894 95.775.113 28.574-20.781 40.433-57.261 29.59-91.03l-189.289-582.1 495.247-359.717c28.687-20.781 40.546-57.261 29.59-90.918Z" fill-rule="evenodd"/></svg> </span><strong class="reviews-star__number">4.2</strong></div></div></div><h3 class="reviews__title">Helped with Sweating...</h3><div class="reviews__body">I don't know how they've done it, but this is the only pillow that has helped prevent my head from sweating. I guess the magic is in those wool balls inside. I would give it 5 stars if it were a bit cheaper. Sorry, but $200 for just one pillow is a bit too steep for me. But again, thank you.</div></div><div class="reviews__item"><div class="reviews__meta"><div class="reviews__author">Char Weigel. <em>Verified order.</em></div><div class="reviews__date">02/24/2024</div></div><div class="reviews__score"><div class="reviews-star" style="font-size: 12px"><div class="reviews-star__body"><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"> <?xml version="1.0" encoding="utf-8"?> <svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1306.181 1110.407c-28.461 20.781-40.32 57.261-29.477 91.03l166.136 511.398-435.05-316.122c-28.686-20.781-67.086-20.781-95.66 0l-435.05 316.122 166.25-511.623c10.842-33.544-1.017-70.024-29.591-90.805L178.577 794.285h537.825c35.351 0 66.523-22.701 77.365-56.245l166.25-511.51 166.136 511.397a81.155 81.155 0 0 0 77.365 56.358h537.939l-435.276 316.122Zm609.77-372.819c-10.956-33.656-42.014-56.244-77.365-56.244h-612.141l-189.064-582.1C1026.426 65.589 995.367 43 960.017 43c-35.351 0-66.523 22.588-77.365 56.245L693.475 681.344H81.335c-35.351 0-66.41 22.588-77.366 56.244-10.842 33.657 1.017 70.137 29.591 90.918l495.247 359.718-189.29 582.211c-10.842 33.657 1.017 70.137 29.704 90.918 14.23 10.39 31.059 15.586 47.661 15.586 16.829 0 33.657-5.195 47.887-15.699l495.248-359.718 495.02 359.718c28.575 20.894 67.088 20.894 95.775.113 28.574-20.781 40.433-57.261 29.59-91.03l-189.289-582.1 495.247-359.717c28.687-20.781 40.546-57.261 29.59-90.918Z" fill-rule="evenodd"/></svg> </span><strong class="reviews-star__number">4.2</strong></div></div></div><h3 class="reviews__title">Bought just one to try it out</h3><div class="reviews__body">So far, it's good. What I really appreciate is that it doesn't sink when I sit on it. The wool balls inside provide a unique type of support that feels a bit different but very comfortable. I honestly love it—it's a different experience. I would rate it a full 5 stars, but the black color shows dirt quickly. I wish there were more color options available. If there was a white version, I would definitely buy it. I could use a pillowcase to cover it, but I prefer to enjoy the original texture.</div></div><div class="reviews__item"><div class="reviews__meta"><div class="reviews__author">Mike Johnson. <em>Verified order.</em></div><div class="reviews__date">02/22/2024</div></div><div class="reviews__score"><div class="reviews-star" style="font-size: 12px"><div class="reviews-star__body"><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"> <?xml version="1.0" encoding="utf-8"?> <svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1306.181 1110.407c-28.461 20.781-40.32 57.261-29.477 91.03l166.136 511.398-435.05-316.122c-28.686-20.781-67.086-20.781-95.66 0l-435.05 316.122 166.25-511.623c10.842-33.544-1.017-70.024-29.591-90.805L178.577 794.285h537.825c35.351 0 66.523-22.701 77.365-56.245l166.25-511.51 166.136 511.397a81.155 81.155 0 0 0 77.365 56.358h537.939l-435.276 316.122Zm609.77-372.819c-10.956-33.656-42.014-56.244-77.365-56.244h-612.141l-189.064-582.1C1026.426 65.589 995.367 43 960.017 43c-35.351 0-66.523 22.588-77.365 56.245L693.475 681.344H81.335c-35.351 0-66.41 22.588-77.366 56.244-10.842 33.657 1.017 70.137 29.591 90.918l495.247 359.718-189.29 582.211c-10.842 33.657 1.017 70.137 29.704 90.918 14.23 10.39 31.059 15.586 47.661 15.586 16.829 0 33.657-5.195 47.887-15.699l495.248-359.718 495.02 359.718c28.575 20.894 67.088 20.894 95.775.113 28.574-20.781 40.433-57.261 29.59-91.03l-189.289-582.1 495.247-359.717c28.687-20.781 40.546-57.261 29.59-90.918Z" fill-rule="evenodd"/></svg> </span><strong class="reviews-star__number">4.4</strong></div></div></div><h3 class="reviews__title">Can&#39;t Believe It&#39;s Just a Pillow!</h3><div class="reviews__body">Alright, wasn't sure what the fuss was all about but damn, this pillow is legit. Feels like my head's on a cloud or something. And the cool part? No more sweaty nights. Didn't think a pillow could do that, but here we are. 10/10 would buy again.</div></div><div class="reviews__item"><div class="reviews__meta"><div class="reviews__author">Sarah Miller. <em>Verified order.</em></div><div class="reviews__date">02/02/2024</div></div><div class="reviews__score"><div class="reviews-star" style="font-size: 12px"><div class="reviews-star__body"><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><strong class="reviews-star__number">4.6</strong></div></div></div><h3 class="reviews__title">Sleeping Like a Baby Now</h3><div class="reviews__body">Never been one to care much about bedding, but this Siestly pillow changed the game. Woke up feeling like I actually slept for once. Plus, it's soft but not too soft, you know? Just right. My friends are probably tired of me going on about it, lol.</div></div><div class="reviews__item"><div class="reviews__meta"><div class="reviews__author">Dave Wilson. <em>Verified order.</em></div><div class="reviews__date">02/01/2024</div></div><div class="reviews__score"><div class="reviews-star" style="font-size: 12px"><div class="reviews-star__body"><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><strong class="reviews-star__number">4.7</strong></div></div></div><h3 class="reviews__title">Why Did I Wait So Long?</h3><div class="reviews__body">So, I finally caved after my sister wouldn't stop chatting about her Siestly pillow. And yeah, she was right. This thing is the real deal. My neck pain's pretty much gone, and I'm actually looking forward to going to bed now. Wish I'd gotten it sooner.</div></div><div class="reviews__item"><div class="reviews__meta"><div class="reviews__author">Erika C.. <em>Verified order.</em></div><div class="reviews__date">04/03/2024</div></div><div class="reviews__score"><div class="reviews-star" style="font-size: 12px"><div class="reviews-star__body"><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"> <?xml version="1.0" encoding="utf-8"?> <svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1306.181 1110.407c-28.461 20.781-40.32 57.261-29.477 91.03l166.136 511.398-435.05-316.122c-28.686-20.781-67.086-20.781-95.66 0l-435.05 316.122 166.25-511.623c10.842-33.544-1.017-70.024-29.591-90.805L178.577 794.285h537.825c35.351 0 66.523-22.701 77.365-56.245l166.25-511.51 166.136 511.397a81.155 81.155 0 0 0 77.365 56.358h537.939l-435.276 316.122Zm609.77-372.819c-10.956-33.656-42.014-56.244-77.365-56.244h-612.141l-189.064-582.1C1026.426 65.589 995.367 43 960.017 43c-35.351 0-66.523 22.588-77.365 56.245L693.475 681.344H81.335c-35.351 0-66.41 22.588-77.366 56.244-10.842 33.657 1.017 70.137 29.591 90.918l495.247 359.718-189.29 582.211c-10.842 33.657 1.017 70.137 29.704 90.918 14.23 10.39 31.059 15.586 47.661 15.586 16.829 0 33.657-5.195 47.887-15.699l495.248-359.718 495.02 359.718c28.575 20.894 67.088 20.894 95.775.113 28.574-20.781 40.433-57.261 29.59-91.03l-189.289-582.1 495.247-359.717c28.687-20.781 40.546-57.261 29.59-90.918Z" fill-rule="evenodd"/></svg> </span><strong class="reviews-star__number">4.1</strong></div></div></div><h3 class="reviews__title">Mixed Feelings!</h3><div class="reviews__body">Honestly, I'm torn about this pillow. At around $180, it's really pricey and it only comes in black, which shows dirt too easily. But, here's the thing: it's great for fixing headaches and migraines, thanks to those wool balls inside. So despite its flaws, it's tough to go back to regular pillows after this.</div></div><div class="reviews__item"><div class="reviews__meta"><div class="reviews__author">Emily Davis. <em>Verified order.</em></div><div class="reviews__date">02/02/2024</div></div><div class="reviews__score"><div class="reviews-star" style="font-size: 12px"><div class="reviews-star__body"><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><strong class="reviews-star__number">4.8</strong></div></div></div><h3 class="reviews__title">A Night and Day Difference</h3><div class="reviews__body">Was on the fence because of the price, but OMG, so worth it. The difference in my sleep is night and day. Feels like I'm sleeping on a cloud, and I'm waking up without that groggy feeling. Plus, no more tossing and turning. Siestly, where have you been all my life?</div></div><div class="reviews__item"><div class="reviews__meta"><div class="reviews__author">Brandon Smith. <em>Verified order.</em></div><div class="reviews__date">07/14/2023</div></div><div class="reviews__score"><div class="reviews-star" style="font-size: 12px"><div class="reviews-star__body"><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><strong class="reviews-star__number">5.0</strong></div></div></div><h3 class="reviews__title">Finally, a Full Night&#39;s Sleep!</h3><div class="reviews__body">Gotta say, this pillow is a game-changer. Been struggling with sleep for ages, but since I got the Siestly, I've been sleeping through the night. Even my girlfriend's noticed I'm less grumpy in the mornings, lol. If you're on the fence, just get it. Worth every penny.</div></div><div class="reviews__item"><div class="reviews__meta"><div class="reviews__author">Christopher Young. <em>Verified order.</em></div><div class="reviews__date">11/02/2023</div></div><div class="reviews__score"><div class="reviews-star" style="font-size: 12px"><div class="reviews-star__body"><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"> <?xml version="1.0" encoding="utf-8"?> <svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1306.181 1110.407c-28.461 20.781-40.32 57.261-29.477 91.03l166.136 511.398-435.05-316.122c-28.686-20.781-67.086-20.781-95.66 0l-435.05 316.122 166.25-511.623c10.842-33.544-1.017-70.024-29.591-90.805L178.577 794.285h537.825c35.351 0 66.523-22.701 77.365-56.245l166.25-511.51 166.136 511.397a81.155 81.155 0 0 0 77.365 56.358h537.939l-435.276 316.122Zm609.77-372.819c-10.956-33.656-42.014-56.244-77.365-56.244h-612.141l-189.064-582.1C1026.426 65.589 995.367 43 960.017 43c-35.351 0-66.523 22.588-77.365 56.245L693.475 681.344H81.335c-35.351 0-66.41 22.588-77.366 56.244-10.842 33.657 1.017 70.137 29.591 90.918l495.247 359.718-189.29 582.211c-10.842 33.657 1.017 70.137 29.704 90.918 14.23 10.39 31.059 15.586 47.661 15.586 16.829 0 33.657-5.195 47.887-15.699l495.248-359.718 495.02 359.718c28.575 20.894 67.088 20.894 95.775.113 28.574-20.781 40.433-57.261 29.59-91.03l-189.289-582.1 495.247-359.717c28.687-20.781 40.546-57.261 29.59-90.918Z" fill-rule="evenodd"/></svg> </span><strong class="reviews-star__number">4.3</strong></div></div></div><h3 class="reviews__title">Siestly: Elegance Meets Comfort</h3><div class="reviews__body">The sleek black color of the Siestly pillow not only adds a sophisticated touch to my bedroom decor but also the comfort it offers is simply unmatched. The memory foam adjusts perfectly to my sleeping posture, providing exceptional neck support. I've already recommended it to several friends and family members who are now considering making a switch to Siestly!</div></div><div class="reviews__item"><div class="reviews__meta"><div class="reviews__author">Lisa Walker. <em>Verified order.</em></div><div class="reviews__date">12/15/2023</div></div><div class="reviews__score"><div class="reviews-star" style="font-size: 12px"><div class="reviews-star__body"><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><strong class="reviews-star__number">4.5</strong></div></div></div><h3 class="reviews__title">Siestly Pillow: A Worthy Investment</h3><div class="reviews__body">Initially, I was hesitant due to the price point, but the Siestly pillow has completely transformed my sleep experience. It's not just a pillow; it's an investment in my sleep health. The breathable fabric and ergonomic design have significantly improved my sleep quality, making every penny spent utterly worthwhile.</div></div><div class="reviews__item"><div class="reviews__meta"><div class="reviews__author">Patricia Anderson. <em>Verified order.</em></div><div class="reviews__date">02/01/2023</div></div><div class="reviews__score"><div class="reviews-star" style="font-size: 12px"><div class="reviews-star__body"><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><strong class="reviews-star__number">4.9</strong></div></div></div><h3 class="reviews__title">Luxury Sleep with Siestly King Size</h3><div class="reviews__body">Choosing the Siestly pillow in king size was a game-changer for my spacious bed. The plush, supportive fill adapts to my sleep movements, cradling my head all night. Its hypoallergenic properties are a bonus, ensuring a restful night’s sleep free from allergies. Definitely the crown jewel of my bedding ensemble!</div></div><div class="reviews__item"><div class="reviews__meta"><div class="reviews__author">Jordan Kim. <em>Verified order.</em></div><div class="reviews__date">03/22/2024</div></div><div class="reviews__score"><div class="reviews-star" style="font-size: 12px"><div class="reviews-star__body"><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><span class="reviews-star__icon"><svg fill="#9c0" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><path d="M1915.918 737.475c-10.955-33.543-42.014-56.131-77.364-56.131h-612.029l-189.063-582.1v-.112C1026.394 65.588 995.335 43 959.984 43c-35.237 0-66.41 22.588-77.365 56.245L693.443 681.344H81.415c-35.35 0-66.41 22.588-77.365 56.131-10.955 33.544.79 70.137 29.478 91.03l495.247 359.831-189.177 582.212c-10.955 33.657 1.13 70.25 29.817 90.918 14.23 10.278 30.946 15.487 47.66 15.487 16.716 0 33.432-5.21 47.775-15.6l495.134-359.718 495.021 359.718c28.574 20.781 67.087 20.781 95.662.113 28.687-20.668 40.658-57.261 29.703-91.03l-189.176-582.1 495.36-359.83c28.574-20.894 40.433-57.487 29.364-91.03" fill-rule="evenodd"/></svg> </span><strong class="reviews-star__number">4.7</strong></div></div></div><h3 class="reviews__title">Transformative Comfort with Siestly</h3><div class="reviews__body">The Siestly pillow has been nothing short of transformative for my nightly routine. Its adaptive foam core and luxuriously soft cover meld to provide unparalleled support and comfort. Even after months of use, it retains its shape and support, testament to its superior quality. Truly a pillar of my bedtime comfort!</div></div></div><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Siestly Pillow",
+	"aggregateRating": {
+	"@type": "AggregateRating",
+	"ratingValue": "4.9",
+	"reviewCount": "48",
+	"bestRating": "5",
+	"worstRating": "3.7"
+  },
+  "review": [
+  	
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Ethan P."
+      },
+      "datePublished": "05/30/2024",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "reviewBody": "I initially bought one Siestly pillow to see if it lived up to the hype and I was not disappointed. In fact, I regretted not taking advantage of the multi-buy discount. However, the support team was incredibly accommodating and offered me a special discount for my next purchase. I'm definitely buying a second one to complete my set!",
+      "name": "Outstanding Comfort and Service"
+    },
+    
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Julia S."
+      },
+      "datePublished": "05/29/2024",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "reviewBody": "Initially, I thought my persistent neck pain stemmed from my mattress, leading me to replace it twice with no success. On a whim, I switched to a Siestly pillow and astonishingly, the neck pain vanished within a week. It turns out, all I needed was this well-designed pillow that offers both balance and support.",
+      "name": "Surprisingly Effective"
+    },
+    
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Arvin Riordan"
+      },
+      "datePublished": "02/28/2024",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.8",
+        "bestRating": "5"
+      },
+      "reviewBody": "The black color of the Siestly pillow is a nice touch, I don't want to use pillow case ))), if you guys could sell some other bedding in the same color, that would be awesome. The pillow itself is super comfortable, especially I like the delegated massage effect from the wool balls.",
+      "name": "Siestly Pillow - Black"
+    },
+    
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Char Weigel"
+      },
+      "datePublished": "02/25/2024",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.2",
+        "bestRating": "5"
+      },
+      "reviewBody": "I don't know how they've done it, but this is the only pillow that has helped prevent my head from sweating. I guess the magic is in those wool balls inside. I would give it 5 stars if it were a bit cheaper. Sorry, but $200 for just one pillow is a bit too steep for me. But again, thank you.",
+      "name": "Helped with Sweating..."
+    },
+    
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Char Weigel"
+      },
+      "datePublished": "02/24/2024",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.2",
+        "bestRating": "5"
+      },
+      "reviewBody": "So far, it's good. What I really appreciate is that it doesn't sink when I sit on it. The wool balls inside provide a unique type of support that feels a bit different but very comfortable. I honestly love it—it's a different experience. I would rate it a full 5 stars, but the black color shows dirt quickly. I wish there were more color options available. If there was a white version, I would definitely buy it. I could use a pillowcase to cover it, but I prefer to enjoy the original texture.",
+      "name": "Bought just one to try it out"
+    },
+    
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Mike Johnson"
+      },
+      "datePublished": "02/22/2024",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.4",
+        "bestRating": "5"
+      },
+      "reviewBody": "Alright, wasn't sure what the fuss was all about but damn, this pillow is legit. Feels like my head's on a cloud or something. And the cool part? No more sweaty nights. Didn't think a pillow could do that, but here we are. 10/10 would buy again.",
+      "name": "Can't Believe It's Just a Pillow!"
+    },
+    
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Sarah Miller"
+      },
+      "datePublished": "02/02/2024",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.6",
+        "bestRating": "5"
+      },
+      "reviewBody": "Never been one to care much about bedding, but this Siestly pillow changed the game. Woke up feeling like I actually slept for once. Plus, it's soft but not too soft, you know? Just right. My friends are probably tired of me going on about it, lol.",
+      "name": "Sleeping Like a Baby Now"
+    },
+    
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Dave Wilson"
+      },
+      "datePublished": "02/01/2024",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.7",
+        "bestRating": "5"
+      },
+      "reviewBody": "So, I finally caved after my sister wouldn't stop chatting about her Siestly pillow. And yeah, she was right. This thing is the real deal. My neck pain's pretty much gone, and I'm actually looking forward to going to bed now. Wish I'd gotten it sooner.",
+      "name": "Why Did I Wait So Long?"
+    },
+    
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Erika C."
+      },
+      "datePublished": "04/03/2024",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.1",
+        "bestRating": "5"
+      },
+      "reviewBody": "Honestly, I'm torn about this pillow. At around $180, it's really pricey and it only comes in black, which shows dirt too easily. But, here's the thing: it's great for fixing headaches and migraines, thanks to those wool balls inside. So despite its flaws, it's tough to go back to regular pillows after this.",
+      "name": "Mixed Feelings!"
+    },
+    
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Emily Davis"
+      },
+      "datePublished": "02/02/2024",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.8",
+        "bestRating": "5"
+      },
+      "reviewBody": "Was on the fence because of the price, but OMG, so worth it. The difference in my sleep is night and day. Feels like I'm sleeping on a cloud, and I'm waking up without that groggy feeling. Plus, no more tossing and turning. Siestly, where have you been all my life?",
+      "name": "A Night and Day Difference"
+    },
+    
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Brandon Smith"
+      },
+      "datePublished": "07/14/2023",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5.0",
+        "bestRating": "5"
+      },
+      "reviewBody": "Gotta say, this pillow is a game-changer. Been struggling with sleep for ages, but since I got the Siestly, I've been sleeping through the night. Even my girlfriend's noticed I'm less grumpy in the mornings, lol. If you're on the fence, just get it. Worth every penny.",
+      "name": "Finally, a Full Night's Sleep!"
+    },
+    
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Christopher Young"
+      },
+      "datePublished": "11/02/2023 ",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.3",
+        "bestRating": "5"
+      },
+      "reviewBody": "The sleek black color of the Siestly pillow not only adds a sophisticated touch to my bedroom decor but also the comfort it offers is simply unmatched. The memory foam adjusts perfectly to my sleeping posture, providing exceptional neck support. I've already recommended it to several friends and family members who are now considering making a switch to Siestly!",
+      "name": "Siestly: Elegance Meets Comfort"
+    },
+    
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Lisa Walker"
+      },
+      "datePublished": "12/15/2023",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.5",
+        "bestRating": "5"
+      },
+      "reviewBody": "Initially, I was hesitant due to the price point, but the Siestly pillow has completely transformed my sleep experience. It's not just a pillow; it's an investment in my sleep health. The breathable fabric and ergonomic design have significantly improved my sleep quality, making every penny spent utterly worthwhile.",
+      "name": "Siestly Pillow: A Worthy Investment"
+    },
+    
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Patricia Anderson"
+      },
+      "datePublished": "02/01/2023 ",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.9",
+        "bestRating": "5"
+      },
+      "reviewBody": "Choosing the Siestly pillow in king size was a game-changer for my spacious bed. The plush, supportive fill adapts to my sleep movements, cradling my head all night. Its hypoallergenic properties are a bonus, ensuring a restful night’s sleep free from allergies. Definitely the crown jewel of my bedding ensemble!",
+      "name": "Luxury Sleep with Siestly King Size"
+    },
+    
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Jordan Kim"
+      },
+      "datePublished": "03/22/2024",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.7",
+        "bestRating": "5"
+      },
+      "reviewBody": "The Siestly pillow has been nothing short of transformative for my nightly routine. Its adaptive foam core and luxuriously soft cover meld to provide unparalleled support and comfort. Even after months of use, it retains its shape and support, testament to its superior quality. Truly a pillar of my bedtime comfort!",
+      "name": "Transformative Comfort with Siestly"
+    }
+    
+  ]
+}</script></div><div class="section__footer"><nav aria-label="Page navigation" class="pagination"><a onclick="loadMore(event)" class="jsLoadMode" data-target="reviews" href="/pillow/reviews/pages-2/">Load More</a></nav></div></div></section><section class="section" style="background-color: var(--background-color);"><div class="section__inner"><header class="section__header"><h2 class="section__title">Questions About Siestly?</h2><h3 class="section__subtitle">We're here to help. Check out our FAQ.</h3></header><div class="section__content"><div class="reviews is-short"><div class="reviews__item"><h3 class="reviews__title">Do I need to buy a separate pillow case?</h3><div class="reviews__body">The outer cover of our Siestly bed pillows is machine washable and dryer friendly, so there is no need to purchase an additional pillow cover. However, if you are interested in personalizing your pillow, you can explore our selection of pillow covers and other pillow accessories.</div></div><div class="reviews__item"><h3 class="reviews__title">What is the difference between shredded memory foam and cross-cut memory foam?</h3><div class="reviews__body">Shredded memory foam pillows are made of tiny, shredded pieces of memory foam filling, allowing for more breathability due to additional air circulation. At Siestly, we prefer cross-cut foam for its consistency, non-clumping, and improved air circulation compared to traditional shredded memory foam.</div></div><div class="reviews__item"><h3 class="reviews__title">Is cross-cut microfiber good for back and neck pain?</h3><div class="reviews__body">Our Siestly bed pillows, filled with cross-cut microfiber and 100% virgin memory foam, are designed to be adjustable and provide pressure relief. This adjustability allows for proper spinal alignment, supporting back and neck pain relief for all sleeping positions.</div></div><div class="reviews__item"><h3 class="reviews__title">Do memory foam pillows go flat?</h3><div class="reviews__body">If your Siestly bed pillow begins to feel flat, we recommend putting it in the dryer for 10 minutes to fluff up the 100% virgin memory foam fill.</div></div><div class="reviews__item"><h3 class="reviews__title">How do I clean my Siestly pillow?</h3><div class="reviews__body">You can easily clean your Siestly pillow by removing the outer cover and machine washing it. For the inner pillow, spot cleaning is recommended as needed. Avoid soaking the memory foam core.</div></div><div class="reviews__item"><h3 class="reviews__title">Can I adjust the firmness of my Siestly pillow?</h3><div class="reviews__body">Yes, our Siestly pillows are designed with adjustable filling. You can add or remove the cross-cut memory foam to tailor the pillow’s height and firmness to your comfort preferences.</div></div><div class="reviews__item"><h3 class="reviews__title">Are Siestly pillows hypoallergenic?</h3><div class="reviews__body">Absolutely! Our Siestly pillows are made with hypoallergenic materials, ensuring they are suitable for sleepers with allergies or sensitivities.</div></div><div class="reviews__item"><h3 class="reviews__title">Will the Siestly pillow support side sleepers?</h3><div class="reviews__body">Yes, the Siestly pillow is versatile enough to support side sleepers, back sleepers, and stomach sleepers alike. Its adjustable fill allows you to customize the pillow to your preferred sleeping position.</div></div><div class="reviews__item"><h3 class="reviews__title">Is there a break-in period for the Siestly pillow?</h3><div class="reviews__body">Some sleepers might experience a break-in period as the memory foam adjusts to your body contours. We recommend giving the pillow a few days to fully expand and adjust to your sleeping style.</div></div><div class="reviews__item"><h3 class="reviews__title">What is the warranty on the Siestly pillow?</h3><div class="reviews__body">We stand behind the quality of our Siestly pillows with a comprehensive one-year warranty that covers any defects in materials and workmanship.</div></div><div class="reviews__item"><h3 class="reviews__title">How often should I replace my Siestly pillow?</h3><div class="reviews__body">For optimal comfort and hygiene, we recommend replacing your Siestly pillow every 18 to 24 months, depending on personal usage and care.</div></div><div class="reviews__item"><h3 class="reviews__title">Can the Siestly pillow help reduce snoring?</h3><div class="reviews__body">Many of our customers have reported that the adjustable nature of our Siestly pillow has helped them maintain better alignment of their airways, which can contribute to reducing snoring.</div></div><div class="reviews__item"><h3 class="reviews__title">Is the Siestly pillow suitable for kids?</h3><div class="reviews__body">Yes, the Siestly pillow is safe for children. Its adjustable fill allows you to customize the pillow to suit the comfort and support needs of your child.</div></div><div class="reviews__item"><h3 class="reviews__title">How does the Siestly pillow stay cool throughout the night?</h3><div class="reviews__body">The Siestly pillow is designed with breathable materials and a ventilated memory foam core that promotes airflow, helping to keep the pillow cool throughout the night.</div></div><div class="reviews__item"><h3 class="reviews__title">Can I travel with my Siestly pillow?</h3><div class="reviews__body">Absolutely! The Siestly pillow is lightweight and can be compressed to fit in your travel bag, ensuring you get a great night's sleep wherever you go.</div></div></div><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    
+    {
+      "@type": "Question",
+      "name": "Do I need to buy a separate pillow case?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The outer cover of our Siestly bed pillows is machine washable and dryer friendly, so there is no need to purchase an additional pillow cover. However, if you are interested in personalizing your pillow, you can explore our selection of pillow covers and other pillow accessories."
+      }
+    },
+    
+    {
+      "@type": "Question",
+      "name": "What is the difference between shredded memory foam and cross-cut memory foam?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Shredded memory foam pillows are made of tiny, shredded pieces of memory foam filling, allowing for more breathability due to additional air circulation. At Siestly, we prefer cross-cut foam for its consistency, non-clumping, and improved air circulation compared to traditional shredded memory foam."
+      }
+    },
+    
+    {
+      "@type": "Question",
+      "name": "Is cross-cut microfiber good for back and neck pain?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our Siestly bed pillows, filled with cross-cut microfiber and 100% virgin memory foam, are designed to be adjustable and provide pressure relief. This adjustability allows for proper spinal alignment, supporting back and neck pain relief for all sleeping positions."
+      }
+    },
+    
+    {
+      "@type": "Question",
+      "name": "Do memory foam pillows go flat?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If your Siestly bed pillow begins to feel flat, we recommend putting it in the dryer for 10 minutes to fluff up the 100% virgin memory foam fill."
+      }
+    },
+    
+    {
+      "@type": "Question",
+      "name": "How do I clean my Siestly pillow?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can easily clean your Siestly pillow by removing the outer cover and machine washing it. For the inner pillow, spot cleaning is recommended as needed. Avoid soaking the memory foam core."
+      }
+    },
+    
+    {
+      "@type": "Question",
+      "name": "Can I adjust the firmness of my Siestly pillow?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, our Siestly pillows are designed with adjustable filling. You can add or remove the cross-cut memory foam to tailor the pillow’s height and firmness to your comfort preferences."
+      }
+    },
+    
+    {
+      "@type": "Question",
+      "name": "Are Siestly pillows hypoallergenic?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely! Our Siestly pillows are made with hypoallergenic materials, ensuring they are suitable for sleepers with allergies or sensitivities."
+      }
+    },
+    
+    {
+      "@type": "Question",
+      "name": "Will the Siestly pillow support side sleepers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, the Siestly pillow is versatile enough to support side sleepers, back sleepers, and stomach sleepers alike. Its adjustable fill allows you to customize the pillow to your preferred sleeping position."
+      }
+    },
+    
+    {
+      "@type": "Question",
+      "name": "Is there a break-in period for the Siestly pillow?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some sleepers might experience a break-in period as the memory foam adjusts to your body contours. We recommend giving the pillow a few days to fully expand and adjust to your sleeping style."
+      }
+    },
+    
+    {
+      "@type": "Question",
+      "name": "What is the warranty on the Siestly pillow?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We stand behind the quality of our Siestly pillows with a comprehensive one-year warranty that covers any defects in materials and workmanship."
+      }
+    },
+    
+    {
+      "@type": "Question",
+      "name": "How often should I replace my Siestly pillow?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For optimal comfort and hygiene, we recommend replacing your Siestly pillow every 18 to 24 months, depending on personal usage and care."
+      }
+    },
+    
+    {
+      "@type": "Question",
+      "name": "Can the Siestly pillow help reduce snoring?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Many of our customers have reported that the adjustable nature of our Siestly pillow has helped them maintain better alignment of their airways, which can contribute to reducing snoring."
+      }
+    },
+    
+    {
+      "@type": "Question",
+      "name": "Is the Siestly pillow suitable for kids?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, the Siestly pillow is safe for children. Its adjustable fill allows you to customize the pillow to suit the comfort and support needs of your child."
+      }
+    },
+    
+    {
+      "@type": "Question",
+      "name": "How does the Siestly pillow stay cool throughout the night?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Siestly pillow is designed with breathable materials and a ventilated memory foam core that promotes airflow, helping to keep the pillow cool throughout the night."
+      }
+    },
+    
+    {
+      "@type": "Question",
+      "name": "Can I travel with my Siestly pillow?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely! The Siestly pillow is lightweight and can be compressed to fit in your travel bag, ensuring you get a great night's sleep wherever you go."
+      }
+    }
+    
+  ]
+}</script></div></div></section></main><section class="section" style="background-color: var(--background-color-chocolate); color: #fff"><div class="section__inner"><div class="footer"><div class="footer__left"><div class="footer-logo"><a aria-label="Siestly" class="footer-logo__link" href="/">Siestly</a></div><div class="social"><h3 class="social__title">Stay in loop with Siestly</h3><div class="social__list"><a href="https://www.facebook.com/siestlyOfficial/" target="_blank" rel="noopener" aria-label="Siestly on Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/></svg> </a><a href="https://www.instagram.com/siestly" target="_blank" rel="noopener" aria-label="Siestly on Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/></svg> </a><a href="https://x.com/siestly" target="_blank" rel="noopener" aria-label="Siestly on X"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16"><path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/></svg> </a><a href="https://www.youtube.com/@siestly" target="_blank" rel="noopener" aria-label="Siestly on YouTube"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16"><path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/></svg> </a><a href="https://www.linkedin.com/company/siestly" target="_blank" rel="noopener" aria-label="Siestly on LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/></svg> </a><a href="https://www.reddit.com/r/siestly" target="_blank" rel="noopener" aria-label="Siestly on Reddit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-reddit" viewBox="0 0 16 16"><path d="M6.167 8a.83.83 0 0 0-.83.83c0 .459.372.84.83.831a.831.831 0 0 0 0-1.661m1.843 3.647c.315 0 1.403-.038 1.976-.611a.23.23 0 0 0 0-.306.213.213 0 0 0-.306 0c-.353.363-1.126.487-1.67.487-.545 0-1.308-.124-1.671-.487a.213.213 0 0 0-.306 0 .213.213 0 0 0 0 .306c.564.563 1.652.61 1.977.61zm.992-2.807c0 .458.373.83.831.83s.83-.381.83-.83a.831.831 0 0 0-1.66 0z"/><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.828-1.165c-.315 0-.602.124-.812.325-.801-.573-1.9-.945-3.121-.993l.534-2.501 1.738.372a.83.83 0 1 0 .83-.869.83.83 0 0 0-.744.468l-1.938-.41a.2.2 0 0 0-.153.028.2.2 0 0 0-.086.134l-.592 2.788c-1.24.038-2.358.41-3.17.992-.21-.2-.496-.324-.81-.324a1.163 1.163 0 0 0-.478 2.224q-.03.17-.029.353c0 1.795 2.091 3.256 4.669 3.256s4.668-1.451 4.668-3.256c0-.114-.01-.238-.029-.353.401-.181.688-.592.688-1.069 0-.65-.525-1.165-1.165-1.165"/></svg></a></div><div class="address in-footer"><div class="address__phone"><a href="tel:+18888514715">(888) 851-4715</a><br></div><div class="address__line">651 N Broad St, Suite 201<br>Middletown. DE 19709</div></div></div></div><div class="footer__right"><div class="link-box"><h3 class="link-box__title">Shop</h3><ul class="link-box__list"><li><a aria-label="Buy Siestly Pillow" href="/pillow/">Siestly Pillow</a></li><li><a aria-label="Siestly Reviews" href="/reviews/">Reviews</a></li></ul></div><div class="link-box"><h3 class="link-box__title">Support</h3><ul class="link-box__list"><li><a aria-label="Frequently Asked Questions: Siestly" href="/faq/">FAQ</a></li><li><a aria-label="Siestly Insights" href="/insights/">Insights</a></li><li><a aria-label="Contact Siestly Support" href="/contact/">Support</a></li></ul></div><div class="link-box"><h3 class="link-box__title">Insights</h3><ul class="link-box__list"><li><a href="/insights/identifying-bad-pillow-symptoms-and-finding-a-pillow-that-doesnt-go-flat/">Identifying Bad Pillow Symptoms</a></li><li><a href="/insights/choosing-the-best-pillow-for-your-bed-why-the-siestly-black-pillow-leads-in-2024/">Choosing the Best Pillow for Your Bed</a></li><li><a href="/insights/spotting-bad-pillow-symptoms-and-choosing-the-right-pillow/">Spotting Bad Pillow Symptoms</a></li><li><a href="/insights/sleeping-with-multiple-pillows-help-alleviate-depression-uncovering-the-facts/">Sleeping with Multiple Pillows Help Alleviate Depressions</a></li></ul></div></div></div></div></section><section class="section is-narrow"><div class="section__inner"><div class="footer-bar"><div class="footer-bar__left"><div class="copy"><span>Siestly</span><span>&copy 2024</span></div></div><div class="footer-bar__right"><div class="legal-links"><a href="/legals/privacy-policy/" aria-label="Siestly Privacy Policy">Privacy Policy</a> <a href="/legals/terms-of-service/" aria-label="Siestly Terms of Service">Terms of Service</a> <a href="/legals/return-policy/" aria-label="Siestly Refund Policy">Return Policy</a> <a href="/legals/shipping-policy/" aria-label="Siestly Shipping Policy">Shipping Policy</a> <a href="/legals/cookie-policy/" aria-label="Siestly Cookie Policy">Cookie Policy</a> <a href="/legals/accessibility-statement/" aria-label="Siestly Accessibility Statement">Accessibility Statement</a> <a href="/legals/ccpa-compliance/" aria-label="Siestly Do Not Sell My Personal Information">Do Not Sell My Personal Information</a></div></div></div></div></section><link rel="stylesheet" href="/bundle/xknFYT7jbt.css"><script>class GalleryPopup {
+  constructor() {
+    this.galleryItems = document.querySelectorAll('.gallery__item');
+    this.galleries = document.querySelectorAll('.gallery');
+    this.galleryParent = document.querySelector('.product__media');
+    this.galleryHeight = this.galleries[0]?.clientHeight || 'auto';
+    this.galleryWidth = this.galleries[0]?.clientWidth || 'auto';
+    this.init();
+  }
+
+  init() {
+    if (window.innerWidth > 800) {
+      this.galleryItems.forEach((item) => {
+        item.addEventListener('click', (e) => this.toggleGallery(e, item));
+      });
+
+      this.galleries.forEach((gallery) => {
+        gallery.addEventListener('click', (e) => this.closeOnOutsideClick(e, gallery));
+      });
+
+      document.addEventListener('keydown', (e) => this.closeOnEscape(e));
+    }
+  }
+
+  toggleGallery(e, item) {
+    e.stopPropagation();
+    const gallery = this.galleries[0];
+    if (!gallery) return;
+    
+    gallery.classList.toggle('gallery--popup');
+    document.body.classList.toggle('no-scroll');
+
+    if (gallery.classList.contains('gallery--popup')) {
+      this.galleryParent.style.height = this.galleryHeight === 'auto' ? 'auto' : `${this.galleryHeight}px`;
+      this.galleryParent.style.width = this.galleryWidth === 'auto' ? 'auto' : `${this.galleryWidth}px`;
+      item.scrollIntoView({ behavior: 'instant', block: 'center' });
+    }
+  }
+
+  closeOnOutsideClick(e, gallery) {
+    if (gallery.classList.contains('gallery--popup') && e.target === gallery) {
+      gallery.classList.remove('gallery--popup');
+      document.body.classList.remove('no-scroll');
+      this.galleryParent.style.height = 'auto';
+      this.galleryParent.style.width = 'auto';
+    }
+  }
+
+  closeOnEscape(e) {
+    if (e.key === 'Escape') {
+      this.galleries.forEach((gallery) => {
+        gallery.classList.remove('gallery--popup');
+        document.body.classList.remove('no-scroll');
+        this.galleryParent.style.height = 'auto';
+        this.galleryParent.style.width = 'auto';
+      });
+    }
+  }
+}
+
+new GalleryPopup();
+function setupPriceSwitcher() {
+	  const priceDisplay = document.querySelector('.jsPrice');
+		const formPriceInput = document.querySelector('.buy-form input[name="price"]');
+	  const prices = {
+	    standard: 177,
+	    king: 210,
+	  };
+
+	  document.querySelector('#size-standard').addEventListener('change', () => {
+	    priceDisplay.textContent = `$${prices.standard}`;
+			formPriceInput.value = prices.standard;
+	  });
+
+	  document.querySelector('#size-king').addEventListener('change', () => {
+	    priceDisplay.textContent = `$${prices.king}`;
+			formPriceInput.value = prices.king;
+	  });
+	}
+
+	// Call the function to set everything up
+	setupPriceSwitcher();
+const mobileMenu = () => {
+  const menuOpener = document.querySelector(".jsMobileMenuButton");
+  const menuToggle = document.querySelector("nav .nav");
+  const menuItems = document.querySelectorAll("nav .nav li");
+  menuOpener.addEventListener("click", (e) => {
+    // toggle the class for this button
+    menuOpener.classList.toggle("menu-open");
+    document.body.classList.toggle("is-menu-open");
+    menuItems.forEach((item, index) => {
+      if (menuOpener.classList.contains("menu-open")) {
+        item.style.transitionDelay = `${index * 0.05}s`;
+      } else {
+        item.style.transitionDelay = "0.05s";
+      }
+    });
+  });
+  // if the menu is open, close it when the user clicks outside the menu and the button
+  document.addEventListener("click", (e) => {
+    if (
+      menuOpener.classList.contains("menu-open") &&
+      !menuToggle.contains(e.target) &&
+      !menuOpener.contains(e.target)
+    ) {
+      menuOpener.classList.remove("menu-open");
+    }
+  });
+};
+
+mobileMenu();
+
+const loadMore = (e) => {
+  e.preventDefault();
+  const url = e.target.href;
+  const target = e.target.dataset.target;
+  console.log(url, target);
+  fetch(url)
+    .then(response => response.text())
+    .then(data => {
+      const parser = new DOMParser();
+      const newDocument = parser.parseFromString(data, 'text/html');
+      const newPagination = newDocument.querySelector('.pagination');
+      const newContent = newDocument.querySelector(`#${target} > div`);
+      document.querySelector('.pagination').innerHTML = newPagination.innerHTML;
+      document.querySelector(`#${target} > div`).innerHTML += newContent.innerHTML;
+    });
+}
+
+
+  		class ShoppingCart {
+  constructor() {
+    this.cart = JSON.parse(localStorage.getItem('cart')) || [];
+    this.cartTemplate = document.getElementById('cartTemplate').content;
+    this.cartContainer = document.getElementById('cart');
+    this.cartButton = document.getElementById('cartButton');
+    this.productForm = document.getElementById('product-form');
+    this.init();
+  }
+
+  init() {
+    if (this.productForm) this.productForm.addEventListener('submit', this.handleProductFormSubmit.bind(this));
+    // if (this.cartButton) this.cartButton.addEventListener('click', this.toggleCart.bind(this));
+    document.addEventListener('click', this.handleOutsideClick.bind(this), true);
+    this.renderCart();
+  }
+
+  handleOutsideClick(event) {
+    if (!this.cartContainer.classList.contains('hidden') &&
+      !this.cartButton.contains(event.target) &&
+      !this.cartContainer.contains(event.target)) {
+      this.cartContainer.classList.add('hidden');
+    }
+  }
+
+  toggleCart(event) {
+    event.preventDefault();
+    this.cartContainer.classList.toggle('hidden');
+  }
+
+  saveCart() {
+    localStorage.setItem('cart', JSON.stringify(this.cart));
+    this.renderCart();
+  }
+
+  generateShopifyCheckout() {
+    const items = this.cart.map(item => `${item.product.shopifyVariant}:${item.quantity}`).join(',');
+    window.location.href = `https://checkout.siestly.com/cart/${items}`;
+  }
+
+  addProduct(product, quantity, goal) {
+    const found = this.cart.find(item => item.product.variant_id === product.variant_id);
+    if (found) {
+      found.quantity += quantity;
+    } else {
+      this.cart.push({ product, quantity });
+    }
+    this.saveCart();
+    if (goal === 'checkout') this.generateShopifyCheckout();
+    else window.location.href = `/cart/`;  //this.showCart();
+  }
+
+  showCart() {
+    this.cartContainer.classList.remove('hidden');
+  }
+
+  handleProductFormSubmit(event) {
+    event.preventDefault();
+    const form = event.target;
+    const goal = event.submitter.name;
+    const currentSizeVariant = form.querySelector('input[name="size"]:checked');
+    this.addProduct({
+      id: form.id.value,
+      variant_id: form.id.value + form.size.value + form.color.value,
+      name: form.name.value,
+      price: parseFloat(form.price.value),
+      size: form.size.value,
+      color: form.color.value,
+      shopifyVariant: currentSizeVariant.dataset.shopifyVariant
+    }, parseInt(form.quantity.value, 10), goal);
+  }
+
+  updateQuantity(productId, newQuantity) {
+    const product = this.cart.find(item => item.product.variant_id === productId);
+    if (product) {
+      product.quantity = newQuantity;
+      if (product.quantity <= 0) this.removeProduct(productId);
+      else this.saveCart();
+    }
+  }
+
+  removeProduct(productId) {
+    this.cart = this.cart.filter(item => item.product.variant_id !== productId);
+    this.saveCart();
+  }
+
+  clearCart() {
+    this.cart = [];
+    localStorage.removeItem('cart');
+    this.saveCart();
+  }
+
+  getTotalPrice() {
+    return this.cart.reduce((total, item) => total + (item.quantity * item.product.price), 0);
+  }
+
+  renderItem(item) {
+    const totalPrice = item.quantity * item.product.price;
+    return `
+      <div class="cart-item">
+        <div class="cart-item__media">
+          <img src="/img/${item.product.id}_${item.product.color}.webp" alt="${item.product.name}">
+        </div>
+        <div class="cart-item__details">
+          <h3>${item.product.name}</h3>
+          <p>$${item.product.price}</p>
+          <small>${item.product.size} / ${item.product.color}</small>
+        </div>
+        <div class="cart-item__price">
+          <small>Subtotal</small>
+          <div class="cart-item__prices">
+            <strong>$${totalPrice}</strong>
+          </div>
+          <div class="quantity-box">
+            <button onclick="cart.updateQuantity('${item.product.variant_id}', ${item.quantity - 1})">-</button>
+            <input type="text" value="${item.quantity}" readonly>
+            <button onclick="cart.updateQuantity('${item.product.variant_id}', ${item.quantity + 1})">+</button>
+          </div>
+          <button class="cart-item__remove-button" onclick="cart.removeProduct('${item.product.variant_id}')">Remove</button>
+        </div>
+      </div>
+    `;
+  }
+
+  renderCart() {
+    const clone = document.importNode(this.cartTemplate, true);
+    const cartBody = clone.querySelector('.cart__body');
+    const cartFooter = clone.querySelector('.cart__footer');
+    const cartTotal = clone.querySelector('.jsTotal');
+    const emptyCartMessage = clone.querySelector('.cart__empty');
+
+    cartBody.innerHTML = this.cart.map(item => this.renderItem(item)).join('');
+    cartTotal.innerHTML = `$${this.getTotalPrice()}`;
+
+    if (this.cart.length > 0) {
+      cartFooter.classList.remove('hidden');
+      emptyCartMessage.classList.add('hidden');
+      this.cartButton.classList.add('has-items');
+    } else {
+      cartFooter.classList.add('hidden');
+      emptyCartMessage.classList.remove('hidden');
+      this.cartButton.classList.remove('has-items');
+    }
+
+    this.cartContainer.innerHTML = '';
+    this.cartContainer.appendChild(clone);
+
+    const checkoutButton = this.cartContainer.querySelector('#checkoutButton');
+    if (checkoutButton) {
+      checkoutButton.addEventListener('click', (event) => {
+        event.preventDefault();
+        this.generateShopifyCheckout();
+      });
+    }
+
+    this.updateDeliveryDate();
+  }
+
+  updateDeliveryDate() {
+    const deliveryDate = new Date();
+    deliveryDate.setDate(deliveryDate.getDate() + 2);
+    const options = { weekday: 'long', month: 'long', day: 'numeric' };
+    document.querySelectorAll('.jsShippingDate').forEach(el => {
+      el.textContent = deliveryDate.toLocaleDateString('en-US', options);
+      el.classList.add('is-loaded');
+    });
+  }
+}
+
+const cart = new ShoppingCart();</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-68Y9RQ5CXC"></script><script>if (!window.location.host.includes('localhost')) {
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-68Y9RQ5CXC');
+   }</script><script defer="defer">if (!window.location.host.includes('localhost')) {
+   (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+   })(window, document, "clarity", "script", "ljpy0jq9gq");
+}</script><script type="speculationrules">{
+  "prerender": [
+    {
+      "urls": ["/reviews/", "/faq/", "/insights/"]
+    }
+  ]
+}</script><script>console.log('Path is ', window.location.pathname);</script></body></html>
